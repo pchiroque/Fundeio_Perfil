@@ -13,7 +13,7 @@
 #.............................................
 
 
-#### Read DATA:: PERFIL - FUNDEI ####
+#### summary:: PERFIL - FUNDEI ####
 rm(list = ls())
 require(dplyr)
 require(ggplot2)
@@ -103,7 +103,7 @@ Result <- data%>%group_by(FisQui,Fase,Type,Camp,Site)%>%
 write.csv2(Result%>%as.data.frame(),file = paste("Summary.csv",sep=""))
 
 
-
+## work with time and CO2 ####
 
 SEA1.P.CO2$time
 
